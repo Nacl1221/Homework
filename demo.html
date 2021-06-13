@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <img class="img_1" src="./image/EBbGwpYnuxzNj2n4pu4QWG.jpg" alt="">
+        <ul class="top_one">    
+            <li>首页</li>
+            <li>榜单</li>
+            <li>歌手</li>
+            <li>下载酷我客户端</li>
+        </ul>
+        <ul class="top_two">
+            <li>美女秀</li>
+            <li>酷我耳机</li>
+            <li>VIP会员</li>
+            <li>i听</li>
+        </ul>
+        <ul class="top_three">
+            <li>更多服务</li>
+            <li>登录</li>
+        </ul>
+        <img class="img_2" src="./image/hRzX3n2eFHEyPd93FriVox.png" alt="">
+    </div>
+    <div class="music">
+        <div class = "jieshao">
+            <p>喜羊羊</p>
+            <ul class="jieshao_1">
+                <li>专辑：<span>儿歌大全</span></li>
+                <li>歌手：<span>华语群星</span></li>
+                <li>分享</li>
+                <li><img src="./image/bbHRbrtQkXjFLRSChCcxPi.jpg" alt=""></li>
+                <li>评论</li>
+            </ul>
+            <ul class="jieshao_2">
+                <li>上传时间：2015-10-12</li>
+                <li>歌曲来源：网络</li>
+            </ul>
+        </div>
+        <div class="geci">
+            <ul>
+                <li>在所有天气 拥有叫人大笑的力量</li>
+                <li>虽然我只是羊</li>
+                <li>虽然我只是羊</li>
+                <li>喜羊羊 美羊羊 懒羊羊 沸羊羊</li>
+                <li>慢羊羊 软绵绵 红太狼 灰太狼</li>
+            </ul>
+        </div>
+    </div>
+    <div class="play">
+        <audio autoplay="ture"  id="mymusic" >
+            <source src="./image/法老 - 宇宙警备队 (Live).mp3" type="audio/mp3"></audio>
+        <div class="images">
+            <img src="./image/nJA5uhS7NxNWUhVyAzNN5q.jpg" alt="">
+        </div>
+        <div class="musicControll">
+            <div class="wp_playBtn" id="wp_playBtn"></div>    <!--暂停开始-->
+        </div>
+        <div id="prograssBar">
+            <div id="wp_bufBar">
+              <div class="prograssBar" id="wp_processBar"></div>
+                <a href="##" class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>   <!--黄点-->
+              </div>
+        </div>
+        <div class="playerRight">
+            <p id="wp_playTime" class="opacity">00.00</p>
+            <div id="controllBtn">
+                <div class="sound" id="wp_mute"></div>
+            </div>
+        </div>
+        <div class="xiazai">
+            <div class="jiantou"></div>
+            <p>免费下载这首歌</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom_small">
+            <span>评论&nbsp&nbsp<span>1703条评论</span></p>
+        </div>
+        <div class="write_comment">
+            <div class="avatar"><img src="./image/微信图片_20210610161240.jpg" alt=""></div>
+            <div class="fenxiang">
+                <textarea name="comment" id="comment" cols="100" rows="5">分享你的见解</textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" id="submit" value="评论">
+            </div>
+        </div>
+        <div class="good_comment">
+            <span>精彩评论</span>
+        </div>
+        <div class="comments" id="comments">
+            <div class="each_comment" id="each_comment">
+                <div class="each_comment_avatar" id="each_comment_avatar">
+                    <img src="./image/fDRw8gm9XazHuqiccYQiyb.jpg" alt="">
+                </div>
+                <div class="each_comment_msg" id="each_comment_msg">
+                    <ul>
+                        <li>网友1</li>
+                        <li>学校晚会表演这首歌</li>
+                        <li>2021-01-13  16:16:44</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="each_comment" id="each_comment">
+                <div class="each_comment_avatar" id="each_comment_avatar">
+                    <img src="./image/fDRw8gm9XazHuqiccYQiyb.jpg" alt="">
+                </div>
+                <div class="each_comment_msg" id="each_comment_msg">
+                    <ul>
+                        <li>网友1</li>
+                        <li>太好听了！！！！</li>
+                        <li>2021-04-23  06:16:24</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="each_comment" id="each_comment">
+                <div class="each_comment_avatar" id="each_comment_avatar">
+                    <img src="./image/fDRw8gm9XazHuqiccYQiyb.jpg" alt="">
+                </div>
+                <div class="each_comment_msg" id="each_comment_msg">
+                    <ul>
+                        <li>网友1</li>
+                        <li id="gengxin"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fenye">
+            <ul>
+                <li><</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var a;
+    var mymusic = document.getElementById("mymusic");
+    var start = document.getElementById("wp_playBtn");
+    var processBtn = document.getElementById("wp_processBtn");
+    var processBar = document.getElementById("wp_processBar");
+    var bufbar = document.getElementById("wp_bufBar");
+    var playTime = document.getElementById("wp_playTime");
+    var mute = document.getElementById("wp_mute");
+
+    var comment = document.getElementById("comment");
+    var submit = document.getElementById("submit");
+
+    var gengxin = document.getElementById("gengxin");
+
+    start.onclick = function(){
+        if(mymusic.paused){
+            mymusic.play();
+            start.className = "zan";
+        }
+        else{
+            mymusic.pause();
+            start.className = "wp_playBtn";
+        }
+    }
+
+    mymusic.addEventListener('timeupdate', function () {
+      updateProgress(mymusic);
+      }, false);
+      function updateProgress(myaudio) {
+      var value = mymusic.currentTime / mymusic.duration;
+      processBtn.style.left = value * 100 + '%';
+      processBar.style.width = value * 230 +'px';
+      playTime.innerHTML = transTime(mymusic.currentTime);
+      }
+      function transTime(value) {
+        var time = "";
+        var h = parseInt(value / 3600);
+        var m = parseInt(value / 60);
+        var s = parseInt(value % 60);
+        if (h > 0) {
+            time = formatTime(h + ":" + m + ":" + s);
+        } else {
+            time = formatTime(m + ":" + s);
+        }
+        return time;
+      }
+      function formatTime(value) {
+        var time = "";
+        var s = value.split(':');
+        var i = 0;
+        for (; i < s.length - 1; i++) {
+            time += s[i].length == 1 ? ("0" + s[i]) : s[i];
+            time += ":";
+        }
+        time += s[i].length == 1 ? ("0" + s[i]) : s[i];
+      return time;
+    }   
+
+    mute.onclick = function(){
+        mymusic.muted = !mymusic.muted;
+    }
+
+    function save(){
+        var date = new Date();
+        var year = date .getFullYear();
+        var month = date .getMonth() + 1;
+        var day = date .getDate(); 
+        var hour = date .getHours();
+        var min = date .getMinutes();
+        var sec = date.getSeconds();
+        a = year+'-'+month+'-'+day+' '+hour+':'+min+':'+sec;
+        var b = comment.value + a;
+        localStorage.setItem('data',b);
+    }
+    function put(){
+        var message = localStorage.getItem('data');
+        gengxin.innerHTML = message;
+    }
+    submit.onclick = function(){
+        if(comment.innerHTML == ''){
+            alter("请输入内容");
+        }
+        else{
+            save();
+            put();
+        }
+    }
+</script>
+</html>

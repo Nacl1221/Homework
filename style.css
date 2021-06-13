@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+  }  
+a {
+    text-decoration: none;
+  }
+  
+ul {
+    list-style-type: none;
+  }
+
+.clear:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  } 
+.top{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+.top .img_1{
+    position: absolute;
+    left: 150px;
+}
+.top .top_one{
+    position: absolute;
+    left: 300px;
+    top: 13px;
+    height: 38px;
+}
+.top .top_two{
+    position: absolute;
+    left: 615px;
+    top: 16px;
+    height: 38px;
+    color: white;
+}
+.top .top_three{
+    position: absolute;
+    left: 930px;
+    top: 13px;
+    height: 38px;
+    color: white;
+}
+.top .top_one li{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+}
+.top .top_two li{
+    float: left;
+    margin-right: 20px;
+    font-size: 10px;
+    background-image: url(./image/20210609192822.png); 
+    background-repeat: no-repeat;
+    padding-left: 17px;    
+    background-size: 15px;     
+}
+.top .top_three li{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+}
+.top .top_one li:hover{
+    color: tomato;
+}
+.top .top_three li:hover{
+    color: tomato;
+}
+.img_2{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+.music{
+    display: inline-block;
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: -40px;
+    left: 150px;
+}
+.music .jieshao{
+    width: 600px;
+    height: 95px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(100, 99, 99);
+}
+.music .jieshao p{
+    text-align: center;
+    font-size: 30px;
+    font-family: '黑体';
+}
+.music .jieshao_1{
+    font-size: 15px;
+    margin-top: 15px;
+    position: absolute;
+    left: 120px;
+}
+.music .jieshao_1 li{
+    float: left;
+    margin-right: 8px;
+}
+.music .jieshao_1 span{
+    color: rgb(206, 157, 83);
+}
+.music .jieshao_1 li:nth-child(5){
+    color: rgb(206, 157, 83);
+}
+.music .jieshao_2{
+    font-size: 10px;
+    margin-left: 40px;
+    position: absolute;
+    left: 140px;
+    top: 75px;
+}
+.music .jieshao_2 li{
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.music .geci{
+    margin: 0 auto;
+}
+.music .geci li{
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+.play{
+    display: inline-block;
+    width: 38%;
+    position: relative;
+    left: 190px;
+    top: 60px;
+
+}
+.play .images{
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+.play .images img{
+    position: absolute;
+    left: 86px;
+    border-radius: 50%;
+}
+@keyframes identifier {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.images img{
+    animation: identifier 8s linear infinite;
+}
+.musicControll{
+    position: relative;
+    left: -230px;
+    display: inline-block;
+    width: 45px;
+    margin-top: 20px;
+}
+.musicControll div{
+    width: 30px;
+    height: 30px;
+	cursor: pointer;
+	display: inline-block;
+}
+.musicControll .wp_playBtn,
+.musicControll .zan{
+	width: 30px;
+	height: 30px;
+	background: url(./image/ft4wYB2sBrTzcGpwteSquz.jpg);
+}
+.musicControll .wp_playBtn{
+	width: 40px;
+	height: 40px;
+	background-position: -110px 0px;
+}
+.musicControll .zan{
+	width: 40px;
+	height: 40px;
+	background-position: -207px 0px;
+}
+#prograssBar {
+    float: left;
+	position: relative;
+    left: 65px;
+    top: 30px;
+	width: 230px;
+	height: 4px;
+    background: url(./image/prograssBg.png);
+    margin: 10px 10px 0 0;
+	display: inline;
+    background-color: rgba(141, 139, 139,0.3)
+}
+#wp_processBar {
+	width: 0px;
+	height: 4px;
+	background: #ffcd2d;
+}
+#wp_processBtn {
+	width: 10px;
+	height: 10px;
+	background: url(./image/8x7cejPCVRaEBEDHg7ezDs.png) 0 -128px;
+	position: absolute;
+	top: -3px;
+}
+#wp_bufBar {
+	width: 0px;
+	height: 4px;
+	background: url(./image/prograssBg.png);
+}
+
+
+.playerRight {
+    position: relative;
+	width: 30px;
+	height: 30px;
+}
+#wp_playTime {
+    position: absolute;
+    left: 350px;
+    top: -65px;
+	margin-top: 33px;
+	font-size: 12px;
+}
+#wp_mute {
+	position: absolute;
+    left: 310px;
+    top: -55px;
+	width: 25px;
+	height: 23px;
+	background: url(./image/ft4wYB2sBrTzcGpwteSquz.jpg) no-repeat -40px 0px;
+	margin: 21px 22px 0 0;
+	z-index: 13;
+}
+.xiazai{
+    position: relative;
+    left: 90px;
+    width: 200px;
+    height: 50px;
+    background: url(./image/ft4wYB2sBrTzcGpwteSquz.jpg) no-repeat 0px -40px;
+}
+.xiazai p{
+    text-align: center;
+    line-height: 50px;
+}
+.jiantou{
+    width: 18px;
+    height: 16px;
+    position: absolute;
+    top:20px;
+    left: 15px;
+    background: url(./image/ft4wYB2sBrTzcGpwteSquz.jpg) no-repeat 0px 0px;
+}
+.bottom{
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.bottom_small{
+    width: 800px;
+    height: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+}
+.bottom_small p{
+    font-size: 15px;
+}
+.bottom_small span{
+    font-size: 10px;
+}
+.write_comment{
+    position: relative;
+}
+.write_comment .avatar img{
+    position: absolute;
+    top: 30px;
+    width: 52px;
+    height: 52px;
+}
+.write_comment .avatar{
+    display: inline;
+}
+.write_comment .fenxiang{
+    display: inline;
+    position: absolute;
+    left: 70px;
+    top: 30px;
+}
+.write_comment .submit input{
+    position: absolute;
+    top: 110px;
+    left: 680px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+}
+.good_comment{
+    width: 800px;
+    height: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+    position: absolute;
+    top: 250px;
+}
+
+.comments{
+    position: relative;
+    top: 270px;
+}
+.comments .each_comment{
+    border-bottom: 1px solid rgba(155, 152, 152,0.5);
+}
+.comments .each_comment .each_comment_avatar{
+    display: inline;
+}
+.comments .each_comment .each_comment_msg{
+    position: absolute;
+    left: 90px;
+    width: 500px;
+    display: inline;
+    font-size: 15px;
+}
+.comments .each_comment .each_comment_msg ul li:nth-child(1){
+    color: orange;
+    margin-bottom: 10px;
+}
+.comments .each_comment .each_comment_msg ul li:nth-child(3){
+    color:grey;
+    font-size: 10px;
+}
+.fenye{
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    left: 240px;
+}
+.fenye ul li{
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.fenye ul li:hover{
+    background-color: orange;
+}
